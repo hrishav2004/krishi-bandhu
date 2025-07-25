@@ -26,17 +26,17 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Button variant="farm" size="sm">
-              কিনুন / Buy
+            <Button variant="farm" size="sm" asChild>
+              <a href="/marketplace">কিনুন / Buy</a>
             </Button>
             <Button variant="harvest" size="sm">
               বিক্রি করুন / Sell
             </Button>
-            <Button variant="outline" size="sm">
-              পরামর্শ / Advice
+            <Button variant="outline" size="sm" asChild>
+              <a href="/chat">পরামর্শ / Advice</a>
             </Button>
-            <Button variant="earth" size="sm">
-              প্রকল্প / Schemes
+            <Button variant="earth" size="sm" asChild>
+              <a href="/schemes">প্রকল্প / Schemes</a>
             </Button>
           </div>
 
@@ -52,9 +52,11 @@ const Navbar = () => {
               {language}
             </Button>
             
-            <Button variant="outline" size="sm">
-              <User className="h-4 w-4" />
-              <span className="hidden sm:inline">Login</span>
+            <Button variant="outline" size="sm" asChild>
+              <a href="/auth/login">
+                <User className="h-4 w-4" />
+                <span className="hidden sm:inline">Login</span>
+              </a>
             </Button>
 
             {/* Mobile menu button */}
@@ -72,17 +74,17 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden border-t border-border mt-2 pt-4 pb-6 space-y-3">
-            <Button variant="farm" size="sm" className="w-full justify-start">
-              কিনুন / Buy
+            <Button variant="farm" size="sm" className="w-full justify-start" asChild>
+              <a href="/marketplace">কিনুন / Buy</a>
             </Button>
             <Button variant="harvest" size="sm" className="w-full justify-start">
               বিক্রি করুন / Sell
             </Button>
-            <Button variant="outline" size="sm" className="w-full justify-start">
-              পরামর্শ / Advice
+            <Button variant="outline" size="sm" className="w-full justify-start" asChild>
+              <a href="/chat">পরামর্শ / Advice</a>
             </Button>
-            <Button variant="earth" size="sm" className="w-full justify-start">
-              প্রকল্প / Schemes
+            <Button variant="earth" size="sm" className="w-full justify-start" asChild>
+              <a href="/schemes">প্রকল্প / Schemes</a>
             </Button>
             <Button
               variant="ghost"
