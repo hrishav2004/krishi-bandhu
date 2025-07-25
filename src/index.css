@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* KrishiBandhu Agricultural Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Agricultural color palette */
+    --background: 48 100% 99%;
+    --foreground: 120 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 120 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 120 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Farm Green Primary */
+    --primary: 120 47% 28%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 120 40% 50%;
+    --primary-glow: 120 50% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soil Brown Secondary */
+    --secondary: 25 35% 35%;
+    --secondary-foreground: 48 100% 99%;
+    --secondary-light: 25 30% 55%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Harvest Yellow Accent */
+    --accent: 45 95% 50%;
+    --accent-foreground: 120 20% 15%;
+    --accent-light: 45 85% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Sky Blue */
+    --sky: 195 100% 50%;
+    --sky-light: 195 70% 75%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Cream background variant */
+    --cream: 48 75% 97%;
+    
+    --muted: 48 20% 95%;
+    --muted-foreground: 120 15% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --radius: 0.5rem;
+    --border: 120 25% 88%;
+    --input: 120 25% 94%;
+    --ring: 120 47% 28%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-harvest: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--background)));
+
+    /* Shadows */
+    --shadow-farm: 0 4px 20px hsl(var(--primary) / 0.15);
+    --shadow-harvest: 0 8px 32px hsl(var(--accent) / 0.2);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
