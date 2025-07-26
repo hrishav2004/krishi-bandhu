@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import SchemeCarousel from "@/components/SchemeCarousel";
-import DashboardCharts from "@/components/Charts/DashboardCharts";
-import MSPPanel from "@/components/MSPPanel";
+import Navbar from "@/components/Navbar.jsx";
+import HeroSection from "@/components/HeroSection.jsx";
+import SchemeCarousel from "@/components/SchemeCarousel.jsx";
+import DashboardCharts from "@/components/Charts/DashboardCharts.jsx";
+import MSPPanel from "@/components/MSPPanel.jsx";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageCircle, ShoppingCart, TrendingUp, Users, Leaf, Shield } from "lucide-react";
