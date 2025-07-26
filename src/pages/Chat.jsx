@@ -52,7 +52,7 @@ const Chat = () => {
 
     const userMessage = {
       id: messages.length + 1,
-      sender: "user" as const,
+      sender: "user",
       content: newMessage,
       timestamp: new Date()
     };
@@ -64,7 +64,7 @@ const Chat = () => {
     setTimeout(() => {
       const botResponse = {
         id: messages.length + 2,
-        sender: "bot" as const,
+        sender: "bot",
         content: "ধন্যবাদ আপনার প্রশ্নের জন্য। আমি এই বিষয়ে বিস্তারিত তথ্য খুঁজে দিচ্ছি... / Thank you for your question. I'm finding detailed information on this topic...",
         timestamp: new Date()
       };
@@ -72,7 +72,7 @@ const Chat = () => {
     }, 1000);
   };
 
-  const handleSuggestionClick = (suggestion: string) => {
+  const handleSuggestionClick = (suggestion) => {
     setNewMessage(suggestion);
   };
 

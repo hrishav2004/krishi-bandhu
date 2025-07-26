@@ -12,7 +12,7 @@ const Login = () => {
     password: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // TODO: Implement login logic
     console.log("Login attempt:", formData);

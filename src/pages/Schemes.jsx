@@ -109,7 +109,7 @@ const Schemes = () => {
     return matchesSearch && matchesType;
   });
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status) => {
     switch (status) {
       case "Active": return "default";
       case "Limited": return "secondary";
@@ -117,7 +117,7 @@ const Schemes = () => {
     }
   };
 
-  const getCategoryIcon = (category: string) => {
+  const getCategoryIcon = (category) => {
     switch (category) {
       case "financial": return DollarSign;
       case "equipment": return Tractor;

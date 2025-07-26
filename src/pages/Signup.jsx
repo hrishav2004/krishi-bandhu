@@ -28,12 +28,12 @@ const Signup = () => {
     { value: "other", label: "Other State / অন্য রাজ্য" }
   ];
 
-  const handleStateChange = (value: string) => {
+  const handleStateChange = (value) => {
     setFormData({...formData, state: value});
     setShowWarning(value === "other");
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // TODO: Implement signup logic
     console.log("Signup attempt:", formData);
